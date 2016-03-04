@@ -6,7 +6,7 @@ class StocksController < ApplicationController
       @stock ||= Stock.new_from_lookup(params[:stock])
     end
     
-    if @stock 
+    if @stock
       #render json: @stock
       render partial: 'lookup'
     else
